@@ -85,3 +85,13 @@ header {
 .menu li:hover:after {
     transform: scaleX(1); /* Escala la barra a su tamaño completo */
 }
+
+footer {
+    background-color: #f1f1f1; /* Color de fondo opcional */
+    padding: 10px 0; /* Espacio interno del footer */
+    text-align: center; /* Centra el texto */
+    position: fixed;
+    bottom: 0; /* Ubicación del footer */
+    width: 100%; /* Abarca el ancho completo de la pantalla */
+    font-size: 14px; /* Tamaño del texto */
+}
