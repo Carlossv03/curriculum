@@ -1,0 +1,87 @@
+body {
+    background-color: lightgray;
+    font-family: Arial, sans-serif;
+    padding-top: 60px;
+
+}
+
+#foto {
+    display: block;
+    border-radius: 50%; /* Hace el borde circular */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Agrega sombra */
+    border: 2px solid #ccc; /* Agrega un borde opcional */
+    margin: 70px auto 0 auto;
+}
+
+/* Archivo: styles.css */
+/* Estilos para el header y la navegación */
+header {
+    display: flex;
+    justify-content: space-between; /* Alinea el título y el menú */
+    align-items: center; /* Alinea verticalmente el contenido */
+    background-color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px 20px; /* Añade espacio interno */
+}
+
+
+
+.menu {
+    text-align: right; /* Alinea el menú a la derecha */
+    background-color: aliceblue;
+    top: 0; /* Alinea el menú al top de la ventana */
+    left: 0; /* Alinea el menú al lado izquierdo */
+ 
+}
+
+.menu h2{
+    position: absolute
+}
+
+
+
+
+.menu ul {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el padding por defecto */
+    margin: 0; /* Elimina el margen por defecto */
+}
+
+.menu li {
+    display: inline-block; /* Cambia a inline-block para que el tamaño sea solo el del contenido */
+    margin-right: 20px; /* Espacio entre los elementos del menú */
+    position: relative; /* Necesario para posicionar la barra */
+}
+
+.menu a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: black; /* Color del texto */
+    padding: 10px; /* Espacio alrededor del texto */
+}
+
+.menu a:hover {
+    color: blue; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Barra azul */
+.menu li:after {
+    content: ""; /* Necesario para crear un elemento vacío */
+    position: absolute; /* Posiciona la barra relativa al li */
+    left: 0; /* Alinea la barra a la izquierda del texto */
+    bottom: -5px; /* Alinea la barra justo debajo del texto */
+    width: 100%; /* Ancho de la barra igual al contenido */
+    height: 2px; /* Altura de la barra */
+    background-color: blue; /* Color de la barra */
+    transform: scaleX(0); /* Inicia la barra con escala 0 (invisible) */
+    transition: transform 0.3s ease; /* Animación suave al mostrar/ocultar */
+}
+
+/* Muestra la barra al pasar el mouse */
+.menu li:hover:after {
+    transform: scaleX(1); /* Escala la barra a su tamaño completo */
+}
