@@ -4,7 +4,7 @@ body {
     padding-top: 60px;
 
 }
-
+/* trabajo en clase*/
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
@@ -15,6 +15,17 @@ h1 {
     font-weight: bold;
 }
 
+#photo{
+    width: 200px;
+    height: auto;
+}
+
+.subtitle{
+    color: rgb(107 114 128 / 0.89);
+    text-transform: uppercase;
+}
+
+/* trabajo en clase*/
 #foto {
     display: block;
     border-radius: 50%; /* Hace el borde circular */
