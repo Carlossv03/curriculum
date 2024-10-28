@@ -29,6 +29,11 @@ header {
     padding: 10px 20px; /* Añade espacio interno */
 }
 
+/*
+#prueba{
+    background: blue;
+    background-color: yellow;
+}*/
 
 
 .menu {
@@ -90,8 +95,8 @@ footer {
     background-color: #f1f1f1; /* Color de fondo opcional */
     padding: 10px 0; /* Espacio interno del footer */
     text-align: center; /* Centra el texto */
-    position: fixed;
+   
     bottom: 0; /* Ubicación del footer */
-    width: 100%; /* Abarca el ancho completo de la pantalla */
+    width: auto; /* Abarca el ancho completo de la pantalla */
     font-size: 14px; /* Tamaño del texto */
 }

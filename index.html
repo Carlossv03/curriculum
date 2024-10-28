@@ -11,9 +11,9 @@
         <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
-        <img id ="foto" src = "foto.jpg" width = 200px alt="Foto de perfil con sombra y borde circular"/>
+        
         <header>
-            <h2>Curriculum</h2>
+            <h1>Curriculum</h1>
             <nav class = "menu">
                 <ul>
                     <li><a href = "#inicio">Inicio</a></li>
@@ -23,25 +23,100 @@
                 </ul>
             </nav>
         </header>
+        
+        <main>
+            <img id ="foto" src = "foto.jpg" width = 200px alt="Foto de perfil con sombra y borde circular"/>
+            <section id = "nombre">
+                <h1>Carlos Salazar</h1>
+            </section>
 
-        <section id = "inicio">
-            <h2>Inicio</h2>
-        </section>
+            
+            <section id = "inicio">
+                <h2>Inicio</h2>
+            </section>
 
-        <section id = "habilidades">
-            <h2>Habilidades</h2>
-        </section>
+            
 
-        <section id = "proyectos">
-            <h2>Proyecto</h2>
-        </section>
+            <section id = "habilidades">
+                <h2>Habilidades</h2>
+            </section>
 
-        <section id = "contacto">
-            <h2>Contacto</h2>
-            <ul> 
-                <li><a href="https://www.linkedin.com/in/carlos-adri%C3%A1n-salazar-valverde-5868a7221/">LinkedIn</a></li> <li><a href="https://github.com/Carlossv03">GitHub</a></li> 
-            </ul> 
-        </section>
+            <section id = "proyectos">
+                <h2>Proyecto</h2>
+            </section>
+
+            <section id = "contacto">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Correo: <a href = "mailto:carasala@espol.edu.ec">carasala@espol.edu.ec</a></li> 
+                    <li><a href="https://www.linkedin.com/in/carlos-adri%C3%A1n-salazar-valverde-5868a7221/">LinkedIn</a></li> 
+                    <li><a href="https://github.com/Carlossv03">GitHub</a></li> 
+                </ul> 
+            </section>
+
+            <section class = "wrapper-2-1 wrapper-1-1">
+                <form id = "formulario">
+                    <p>¡Contactame por medio de un correo, será un gusto atenderte!</p>
+                    <p style="color: red;">Campos requeridos *</p>
+                    <ul>
+                        <li>
+                            <label for = "nombre" >Nombre: <span style="color: red;">*</span></label>
+                            <input type = "text" id = "nombre" name = "nombre" required = "required" placeholder = "ej: Carlos Salazar" >
+                        </li>
+
+                        <li>
+                            <label for = "email">Email: <span style="color: red;">*</span></label>
+                            <input type = "email" id = "correoelectronico" name = "correoelectronico" required = "required" placeholder = "ej: usuario@gmail.com" title="Ingrese un correo electrónico con el formato establecido.">
+                        </li>
+
+                        <li>
+                            <label for = "asunto">Asunto: <span style="color: red;">*</span></label>
+                            <input type = "text" id = "asunto" name = "asunto" required = "required" placeholder = "ej: Contratación de programa">
+                        </li>
+
+                        <li>
+                            <label for="telefono">Número de Celular: <span style="color: red;">*</span></label>
+                            <input type="tel" id="telefono" name="telefono" required="required" placeholder="ej: 0991234567" pattern="[0-9]{10}" title="Ingrese un número de celular de 10 dígitos.">
+                        </li>
+
+                        <li>
+                            <p>País: </p>
+                            <select name = "pais"> 
+                                
+                                <option value = "ec">Ecuador</option>
+                                <option value = "otros">Otro</option>
+                            </select>
+                        </li>
+
+                        <li>
+                            <p>Preferencia de contacto:</p>
+                            <label>
+                                <input type="radio" name="contacto" value="email" checked>
+                                Correo electrónico
+                            </label>
+                            <label>
+                                <input type="radio" name="contacto" value="telefono">
+                                Teléfono
+                            </label>
+                        </li>
+
+                        <li>
+                            <label for = "mensaje">Mensaje: <span style="color: red;">*</span></label>
+                            <textarea id = "mensaje" name = "mensaje" rows = "10" column = "50" required = "required" placeholder = "ej: Hola, quiero contactarme contigo para..."></textarea>
+                        </li>
+                        <button type = "submit" name="enviar" class = "btn-enviar">Enviar</button>
+                            
+                    </ul>    
+                        
+                </form>
+                <div id = "mapa">
+                    <p>Para reuniones de manera presencial podrás guiarte con mi ubicación actual</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.019472861224!2d-79.96674856019166!3d-2.1462290947853444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1730072757205!5m2!1ses-419!2sec" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </section>
+
+        </main>
 
         <footer> 
             <p> &copy; 2024 Carlos Adrian Salazar Valverde. Todos los derechos reservados.</p>      
