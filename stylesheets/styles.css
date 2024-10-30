@@ -1,12 +1,12 @@
 body {
-    background-color: lightgray;
+    background-color: #e7e5e4;
     font-family: Arial, sans-serif;
     padding-top: 60px;
 
 }
 /* trabajo en clase*/
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 200;
 }
 
@@ -15,11 +15,19 @@ h1 {
     font-weight: bold;
 }
 
+h2 {
+    font-size: 30px ;
+    font-weight: bold;
+}
+
+/*
+trabajo en clase
 #photo{
     width: 200px;
     height: auto;
 }
-
+*/
+/* trabajo en clase*/
 .subtitle{
     color: rgb(107 114 128 / 0.89);
     text-transform: uppercase;
@@ -33,6 +41,48 @@ h1 {
     border: 2px solid #ccc; /* Agrega un borde opcional */
     margin: 70px auto 0 auto;
 }
+
+section {
+
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px; 
+ 
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd; 
+ 
+    /* relleno (espacio interno) de 
+    1.5% en la parte superior e inferior y 
+    0.8% a los lados derecho e izquierdo. */
+ 
+    padding: 1.5% 0.8%; 
+ 
+    /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+    dándoles un valor específico de 1.2% para esos lados. */
+ 
+    padding-left: 1.2%; 
+    padding-right: 1.2%; 
+
+
+
+   /* borde redondeado con un radio de 5 píxeles */
+
+   /* en navegadores basados en WebKit, 
+   como versiones antiguas de Safari y Chrome. */
+   -webkit-border-radius: 5px; 
+
+   /* en navegadores antiguos de Mozilla, 
+   como Firefox.  */
+   -moz-border-radius: 5px;    
+
+   /* en navegadores modernos. */
+   border-radius: 5px;
+   
+    /* sombra a un elemento */
+
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+  }
 
 /* Archivo: styles.css */
 /* Estilos para el header y la navegación */
@@ -65,9 +115,6 @@ header {
  
 }
 
-.menu h2{
-    position: absolute
-}
 
 
 
@@ -79,19 +126,25 @@ header {
 }
 
 .menu li {
+    font-size: 18px;
+    font-weight: bold;
     display: inline-block; /* Cambia a inline-block para que el tamaño sea solo el del contenido */
     margin-right: 20px; /* Espacio entre los elementos del menú */
     position: relative; /* Necesario para posicionar la barra */
 }
-
-.menu a {
+/*Eliminar el subrayado de todas las etiquetas a*/
+a {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     color: black; /* Color del texto */
     padding: 10px; /* Espacio alrededor del texto */
 }
-
-.menu a:hover {
+/*Subrayar todas las etiquetas a*/
+a:hover {
     color: blue; /* Cambia el color del texto al pasar el mouse */
+}
+/*quitandole las viñetas a las <li>*/
+ul {
+    list-style-type: none;
 }
 
 /* Barra azul */
@@ -112,12 +165,366 @@ header {
     transform: scaleX(1); /* Escala la barra a su tamaño completo */
 }
 
+/*------------Sección de Inicio---------------------*/
+#inicio{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#inicio h2{
+    grid-column: 1/ 3; 
+    grid-row: 1 / 2;
+    text-align: center;
+
+}
+ 
+.imagenconf{
+    display: block;
+    border-radius: 15px;
+
+}
+
+#inicio p{
+    font-size: 21px;
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3;
+    text-align: justify;
+    margin: 0%;
+
+}
+
+/*------------Sección de Habilidades---------------------*/
+
+.habilidades{
+    display: grid;
+    gap:0.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.habilidades h2{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2; 
+    text-align: center;
+}
+
+.habilidad {
+    text-align: center;
+    margin: 1rem; /* espacio alrededor de cada habilidad */
+}
+.habilidad p{
+    font-size: 18px;
+    margin: 30px;
+    font-weight: bold;
+}
+
+.habilidades img {
+    display: block;
+    margin: 0 auto;
+    padding: 0%;
+    width:150px; 
+    height:150px; /* centra la imagen */
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+    border-radius: 15px;
+    
+}
+
+.habilidades img:hover{
+    
+    top: -20px !important;
+}
+
+
+
+
+.habilidad a {
+    display: inline-block; /* Limita el área clickeable al tamaño de la imagen */
+    padding: 0%;
+}
+
+/*------------Sección de experiencia---------------------*/
+.Experiencia{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Experiencia h2{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2; 
+    text-align: center;
+}
+
+
+.card{
+    grid-row: 2 / 3; 
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 40px -40px #00ad87;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+  }
+
+.card h2{
+    margin: 0px;
+}
+.card > p{
+    opacity: 0.4;
+    transition: all 0.3s ease;
+    text-align: justify;
+}
+
+.card:hover{
+    box-shadow: 0px 50px 75px -25px #ad3500 !important;
+    top: -20px !important;
+}
+
+.card{
+    width: 80%;
+    max-width: 1440px;
+    height: 300px;
+    justify-content: space-between;
+    margin: auto;
+}
+
+
+/*------------Sección de Contactos---------------------*/
+.contacto{
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contacto h2 {
+    grid-column: 1 / 3; 
+    grid-row: 1 / 2; 
+    text-align: center;
+  }
+
+
+/*----formulario---*/
+.form {
+/* Propiedades de Grid */
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+
+/* Modelo de diseño en flexbox */
+    display: flex;								
+    row-gap: 1rem;
+    flex-direction: column; /* Para que los elementos estén en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+}
+
+.form {
+    background-color: #cce9e6;
+    padding: 90px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    padding: 5% 50px;
+  
+}
+
+.form ul {
+    padding: 0; /* Elimina el padding del ul */
+    width: 100%; /* Asegura que el ul ocupe el 100% del ancho */
+}
+
+.form label {
+    display: block; /* Muestra el label como bloque para que esté encima del input */
+    margin-bottom: 5px; /* Espacio entre el label y el input */
+} 
+
+.form p {
+    text-align: center;
+    margin-top: 0px;
+}
+
+
+.form li {
+    display: block; /* Hacer que los elementos dentro del li se alineen en una fila */
+    align-items: center; /* Centra verticalmente los elementos */
+    margin-bottom: 20px; /* Espacio entre cada li */
+}
+
+
+
+.form select {
+    margin-left: 0%; /* Espacio entre el texto y el select */
+}
+
+
+.opciones_contacto {
+    display: flex; /* Hace que los botones de radio se alineen en una fila */
+    margin-left: 0%; /* Espacio entre el texto y los radio buttons */
+    align-items: center;
+}
+
+.opciones_contacto label{
+    margin-left: 9%; /* Espacio entre el texto y los radio buttons */
+    align-items: center;
+}
+
+
+#pais{
+    display: flex;
+    text-align: center;
+
+
+}
+
+.radio label {
+    margin-right: 20px; /* Espacio entre los labels de los radio buttons */
+}
+.radio label {
+    margin-right: 20px; /* Espacio entre los labels de los radio buttons */
+}
+.form input{ 
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.1s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 0px solid #ddd;
+    box-sizing: border-box;
+}
+
+
+.form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.form input:focus {
+    border-color: #ffa07a;
+    
+}
+
+
+.form button {
+    background-color: #ffa07a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background-color: #ff8c69;
+    
+}
+
+.form input:hover {
+    background-color: #dbf7d1;
+   
+}
+
+
+/*---------------Mapa-------------------*/
+.contacto #mapa {
+    grid-column: 2 / 3; 
+    grid-row: 2 / 3; 
+    text-align: center;
+}
+
+#mapa iframe{
+  width: 80%;
+  height: 80%;
+  border-radius: 15px;
+}
+
+.contacto ul {
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4;
+    text-align: center;
+}
+
+
+
+.mapa ul {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en fila horizontal */
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding: 5%; /* Elimina el padding de la lista */
+    margin-top: 8%; /* Elimina el margen de la lista */
+    gap: 100px; /* Añade espacio entre las imágenes */
+}
+
+.mapa img{
+    width:60px; 
+    height:60px;
+    margin-left: 100%;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.mapa img:hover{
+    transform: translateY(-10px);
+}
+
+
+
+
+
+
+
 footer {
     background-color: #f1f1f1; /* Color de fondo opcional */
     padding: 10px 0; /* Espacio interno del footer */
     text-align: center; /* Centra el texto */
    
     bottom: 0; /* Ubicación del footer */
-    width: auto; /* Abarca el ancho completo de la pantalla */
+    width: 100%; /* Abarca el ancho completo de la pantalla */
     font-size: 14px; /* Tamaño del texto */
 }
+
+nav ul {
+
+    /* Modelo de diseño flexible */
+    display: flex;									
+    justify-content: space-around;
+   
+}
+
+@media screen and (max-width: 768px){
+    .fila {
+        flex-wrap: wrap;
+        }
+
+        .col-md-12 {
+            width: 100%;
+        }  
+}
+        
+            

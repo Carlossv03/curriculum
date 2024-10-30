@@ -9,6 +9,7 @@
         <meta name = "keywords" content = "Carlos Adrian Salazar Valverde, programador, desarrollo web, Java, Python, HTML, CSS, JavaScript, bases de datos, MySQL, ESPOL">
         <meta name = "author" content = "Carlos Adrian Salazar Valverde">
         <link rel = "stylesheet" href = "stylesheets/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         
@@ -16,105 +17,162 @@
             <h1>Curriculum</h1>
             <nav class = "menu">
                 <ul>
-                    <li><a href = "#inicio">Inicio</a></li>
+                    <li><a href = "#inicio">Sobre mi</a></li>
                     <li><a href = "#habilidades">Habilidades</a></li>
-                    <li><a href = "#proyectos">Proyectos</a></li>
+                    <li><a href = "#Experiencia">Experiencia</a></li>
                     <li><a href = "#contacto" >Contacto</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <img id ="foto" src = "foto.jpg" width = 200px alt="Foto de perfil con sombra y borde circular"/>
+            
             <section id = "nombre">
-                <h1>Carlos Salazar</h1>
+                <img id ="foto" src = "multimedia/foto.jpg" width = 200px alt="Foto de perfil con sombra y borde circular"/>
+                <h1>Carlos Adrián Salazar Valverde</h1>
             </section>
 
             
             <section id = "inicio">
-                <h2>Inicio</h2>
+                <h2>Sobre mi</h2>
+                <img class="imagenconf" src="multimedia/gifconferenciaFIEC.gif" alt="GIF de mi conferencia sobre la beca que ganamos para visitar Alemania, Francia y Luxemburgo">
+                <p>Soy Carlos Salazar, estudiante de Ingeniería en ciencias computacionales con una gran pasión por la tecnología y el desarrollo de software. Aspiro a formar parte de proyectos innovadores y de gran envergadura, donde pueda aplicar y expandir mis conocimientos en áreas como desarrollo de aplicaciones, sistemas y soluciones tecnológicas. Disfruto trabajar en equipo, fomentando la colaboración y el intercambio de ideas para lograr resultados sólidos y de calidad. Además, me encanta asumir el liderazgo de grupos de trabajo, guiando a los equipos hacia el éxito con la organización y una comunicación efectiva. Estoy siempre en busca de nuevos desafíos que me impulsen a crecer profesional y personalmente.</p>
             </section>
 
-            
-
-            <section id = "habilidades">
+            <section id = "habilidades" class="habilidades">
                 <h2>Habilidades</h2>
+                <div class="habilidad">
+                    <p>HTML</p>
+                    <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics" target="_blank" rel="noopener noreferrer"><img id="html" src="multimedia/html.png" alt="logotipo de html"></a>
+                </div>
+                <div class="habilidad">
+                    <p>CSS</p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" rel="noopener noreferrer"><img id="css" src="multimedia/css.png" alt="logotipo de css"></a>
+                </div>
+                <div class="habilidad"> 
+                    <p>JavaScript</p>
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank" rel="noopener noreferrer"><img id="js" src="multimedia/js.png" alt="logotipo de js"></a>
+                </div>
+                <div class="habilidad">
+                    <p>Redes</p>
+                    <a href="https://www.credly.com/badges/bec03857-f55b-4ce3-b98f-20550c079c84" target="_blank" rel="noopener noreferrer"><img id="insignia" src="https://images.credly.com/size/680x680/images/70d71df5-f3dc-4380-9b9d-f22513a70417/CCNAITN__1_.png" alt="Imagen de la insignia CCNA: Introducción a las redes. Emitida por Cisco a Carlos Salazar"></a>
+                </div>
+                <div class="habilidad"> 
+                    <p>Java</p>
+                    <a href="https://www.java.com/es/download/help/whatis_java.html" target="_blank" rel="noopener noreferrer"><img id="js" src="multimedia/java.png" alt="logotipo de js"></a>
+                </div>
+                <div class="habilidad"> 
+                    <p>Python</p>
+                    <a href="https://docs.python.org/3/faq/general.html#what-is-python" target="_blank" rel="noopener noreferrer"><img id="js" src="multimedia/python.png" alt="logotipo de js"></a>
+                </div>
+                <div class="habilidad"> 
+                    <p>MySQL</p>
+                    <a href="https://www.oracle.com/ar/mysql/what-is-mysql/" target="_blank" rel="noopener noreferrer"><img id="js" src="multimedia/mysql.png" alt="logotipo de js"></a>
+                </div>
+                <div class="habilidad"> 
+                    <p>C</p>
+                    <a href="https://es.wikipedia.org/wiki/C_(lenguaje_de_programaci%C3%B3n)" target="_blank" rel="noopener noreferrer"><img id="js" src="multimedia/C.png" alt="logotipo de js"></a>
+                </div>
             </section>
 
-            <section id = "proyectos">
-                <h2>Proyecto</h2>
+            <section id = "Experiencia" class = "Experiencia">
+                <h2>Experiencia</h2>
+                <div class="card">
+                    <h2>Aplicación web y movil para la fundación ASPYEcuador</h2>
+                    <p>Desarrollo y mantenimiento de la aplicación web y movil para la fundación ASPYEcuador para la gestión de citas por parte de clientes y administrativos.</p>
+                  </div>
+                  <div class="card">
+                    <h2>Desarrollo de una aplicación para pc de contactos</h2>
+                    <p>Desarrollo de una aplicación de contacto que permite gestionar tus contactos, y guardar contactos dentro de otros contactos para relacionarlos entre sí, y ver datos importantes. ¡hasta ubicación de los mismos!</p>
+                  </div>
+                  <div class="card">
+                    <h2>Desarrollo de diferentes tipos de proyectos tanto académicos como profesionales</h2>
+                    <p>Desarrollo de aplicación para pc en java para una clínica, bases de datos para manejar transacciones bancarias, juegos y ¡mucho más!</p>
+                  </div>
             </section>
 
-            <section id = "contacto">
+            <section id = "contacto" class = "contacto">
                 <h2>Contacto</h2>
-                <ul>
-                    <li>Correo: <a href = "mailto:carasala@espol.edu.ec">carasala@espol.edu.ec</a></li> 
-                    <li><a href="https://www.linkedin.com/in/carlos-adri%C3%A1n-salazar-valverde-5868a7221/">LinkedIn</a></li> 
-                    <li><a href="https://github.com/Carlossv03">GitHub</a></li> 
-                </ul> 
-            </section>
 
-            <section class = "wrapper-2-1 wrapper-1-1">
-                <form id = "formulario">
-                    <p>¡Contactame por medio de un correo, será un gusto atenderte!</p>
-                    <p style="color: red;">Campos requeridos *</p>
-                    <ul>
-                        <li>
-                            <label for = "nombre" >Nombre: <span style="color: red;">*</span></label>
-                            <input type = "text" id = "nombre" name = "nombre" required = "required" placeholder = "ej: Carlos Salazar" >
-                        </li>
-
-                        <li>
-                            <label for = "email">Email: <span style="color: red;">*</span></label>
-                            <input type = "email" id = "correoelectronico" name = "correoelectronico" required = "required" placeholder = "ej: usuario@gmail.com" title="Ingrese un correo electrónico con el formato establecido.">
-                        </li>
-
-                        <li>
-                            <label for = "asunto">Asunto: <span style="color: red;">*</span></label>
-                            <input type = "text" id = "asunto" name = "asunto" required = "required" placeholder = "ej: Contratación de programa">
-                        </li>
-
-                        <li>
-                            <label for="telefono">Número de Celular: <span style="color: red;">*</span></label>
-                            <input type="tel" id="telefono" name="telefono" required="required" placeholder="ej: 0991234567" pattern="[0-9]{10}" title="Ingrese un número de celular de 10 dígitos.">
-                        </li>
-
-                        <li>
-                            <p>País: </p>
-                            <select name = "pais"> 
-                                
-                                <option value = "ec">Ecuador</option>
-                                <option value = "otros">Otro</option>
-                            </select>
-                        </li>
-
-                        <li>
-                            <p>Preferencia de contacto:</p>
-                            <label>
-                                <input type="radio" name="contacto" value="email" checked>
-                                Correo electrónico
-                            </label>
-                            <label>
-                                <input type="radio" name="contacto" value="telefono">
-                                Teléfono
-                            </label>
-                        </li>
-
-                        <li>
-                            <label for = "mensaje">Mensaje: <span style="color: red;">*</span></label>
-                            <textarea id = "mensaje" name = "mensaje" rows = "10" cols = "50" required = "required" placeholder = "ej: Hola, quiero contactarme contigo para..."></textarea>
-                        </li>
-                        <button type = "submit" name="enviar" class = "btn-enviar">Enviar</button>
-                            
-                    </ul>    
-                        
-                </form>
-                <div id = "mapa">
+                <div id = "mapa" class = "mapa">
                     <p>Para reuniones de manera presencial podrás guiarte con mi ubicación actual</p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.019472861224!2d-79.96674856019166!3d-2.1462290947853444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7301d30e8ff5%3A0x73c27660ff5791b!2sCampus%20Gustavo%20Galindo%20Velasco%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1730072757205!5m2!1ses-419!2sec" width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <ul>
+                        <li><a href="tel:0912345678" target="_blank" rel="noopener noreferrer"><img id="telefono" src="multimedia/phone.png" alt="imagen de teléfono"></a></li>
+                        <li><a href = "mailto:carasala@espol.edu.ec" target="_blank" rel="noopener noreferrer"><img id="correo" src="multimedia/email.png" alt="imagen de correo"></a></li> 
+                        <li><a href="https://www.linkedin.com/in/carlos-adri%C3%A1n-salazar-valverde-5868a7221/" target="_blank" rel="noopener noreferrer"><img id="linkedin" src="multimedia/linkedin.png" alt="imagen de linkedin"></a></li> 
+                        <li><a href="https://github.com/Carlossv03" target="_blank" rel="noopener noreferrer"><img id="github" src="multimedia/github.png" alt="imagen de github"></a></li> 
+                    </ul> 
+                    
                 </div>
+                
 
+                <div class = "form">
+                    <form id = "formulario">
+                        <p>¡Contactame por medio de un correo, será un gusto atenderte!</p>
+                        <p style="color: red;">Campos requeridos *</p>
+                        <ul>
+                            <li>
+                                <label for = "nombre_form" >Nombre: <span style="color: red;">*</span></label>
+                                <input type = "text" id = "nombre_form" name = "nombre" required = "required" placeholder = "ej: Carlos Salazar" title="Ingrese su nombre." >
+                            </li>
+    
+                            <li>
+                                <label for = "email">Email: <span style="color: red;">*</span></label>
+                                <input type = "email" id = "email" name = "correoelectronico" required = "required" placeholder = "ej: usuario@gmail.com" title="Ingrese un correo electrónico con el formato establecido.">
+                            </li>
+    
+                            <li>
+                                <label for = "asunto">Asunto: <span style="color: red;">*</span></label>
+                                <input type = "text" id = "asunto" name = "asunto" required = "required" placeholder = "ej: Contratación de programa">
+                            </li>
+    
+                            <li>
+                                <label for="telefono">Número de Celular: </span></label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="ej: 0991234567" pattern="[0-9]{10}" title="Ingrese un número de celular de 10 dígitos.">
+                            </li>
+    
+                            <li>
+                                <p>Preferencia de contacto:</p>
+                                <div class="opciones_contacto">
+                                    <label>
+                                        <input type="radio" name="contacto" value="email" checked>
+                                        Correo electrónico
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="contacto" value="telefono">
+                                        Teléfono
+                                    </label>
+                                </div>
+                            </li>
+    
+
+                            <li>
+                                <Label for ="pais">País: </Label>
+                                <select name = "pais" id="pais"> 
+                                    
+                                    <option value = "ec">Ecuador</option>
+                                    <option value = "otros">Otro</option>
+                                </select>
+                            </li>
+    
+                            
+                            <li>
+                                <label for = "mensaje">Mensaje: <span style="color: red;">*</span></label>
+                                <textarea id = "mensaje" name = "mensaje" rows = "10" cols = "50" required = "required" placeholder = "ej: Hola, mi nombre es... y quiero contactarme contigo para..."></textarea>
+                            </li>
+                            <button type = "submit" name="enviar" class = "btn-enviar">Enviar</button>
+                                
+                        </ul>    
+                            
+                    </form>
+
+                    
+    
+                </div>
             </section>
+
+           
 
         </main>
 
